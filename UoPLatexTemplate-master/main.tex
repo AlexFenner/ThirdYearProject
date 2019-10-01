@@ -1,0 +1,90 @@
+\documentclass[11pt, twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=30mm, bindingoffset=20mm]{geometry}
+\usepackage[toc,page]{appendix}
+\usepackage{pdfpages}
+\usepackage{natbib}
+\usepackage{dirtytalk}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{helvet}
+\usepackage{hyphenat}
+\renewcommand{\familydefault}{\sfdefault}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE, RO]{\thepage}
+\fancyhead[LO, RE]{\leftmark}
+\setlength{\headheight}{13.6pt}
+\linespread{1}
+\bibliographystyle{Harvard}
+\bibpunct{(}{)}{,}{a}{}{ }
+\graphicspath{ {images/}{appendices/} }
+\footskip = 15mm
+
+\begin{document}
+
+\pagenumbering{roman}
+
+\vspace*{\fill}
+\begingroup
+\centering
+
+
+Title goes here
+
+Final Year Project
+
+For more details, check the cover template on Moodle
+
+\endgroup
+\vspace*{\fill}
+
+\chapter*{Abstract}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Wordcount goes here
+
+
+\chapter*{Acknowledgements}
+
+
+\tableofcontents
+
+\listoffigures
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+\input{chapters/introduction}
+
+\input{chapters/chapter02}
+
+\input{chapters/chapter03}
+
+\input{chapters/chapter04}
+
+\input{chapters/chapter05}
+
+\input{chapters/Conclusion}
+\nocite{*} %Take this out if you don't want it to show all the references and only the ones you've referenced 
+\bibliography{references}
+
+
+
+
+\input{chapters/appendix}
+
+
+
+\end{document}UoP
