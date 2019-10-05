@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <title>Graph Colouring Tool</title>
+  <meta name="description" content="Graph Colouring Testing Tool">
+  <meta name="author" content="Alex Fenner">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
+  <style>
+    body{
+      width: 99%;
+      height: 100%;
+      background-color: lightgray;
+    } 
+    canvas{
+      background-color: white;
+    }
+    menu{
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+     
+  <canvas id="canvas" width="2vw" style="cursor:crosshair;"></canvas>
+
+  <div id = "menu">
+  <button id="addVertexBtn" type="button">Vertex</button>
+  <button id="addArcBtn" type="button">arc</button>
+  </div> 
+
+</body>
+</html>
